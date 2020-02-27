@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [regression]">
+  <test thread-count="5" name="NewAccountTest(failed)">
+    <parameter name="password" value="abc123"/>
+    <parameter name="description" value="Checking"/>
+    <parameter name="initial_Balance" value="200"/>
+    <parameter name="company" value="techfios"/>
+    <parameter name="account_Title" value="Robert"/>
+    <parameter name="email" value="techfiosdemo@gmail.com"/>
+    <classes>
+      <class name="test.NewAccountTest">
+        <methods>
+          <include name="OpenANewAccount" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.NewAccountTest -->
+    </classes>
+  </test> <!-- NewAccountTest(failed) -->
+</suite> <!-- Failed suite [regression] -->

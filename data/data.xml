@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="regression">     //Name of the test suite
+     <test name="NewAccountTest">     //Name of the test case
+          <parameter name="company" value="techfios" />    //Values to be passed
+          <parameter name="email" value="techfiosdemo@gmail.com" />
+          <parameter name="password" value="abc123" />
+          <parameter name="account_Title" value="Robert" />
+          <parameter name="description" value="Checking" />
+          <parameter name="initial_Balance" value="200" />
+          
+          <classes>
+                  <class name="test.NewAccountTest" />     // Class name to inject the values into
+          </classes>
+     </test>
+</suite>
